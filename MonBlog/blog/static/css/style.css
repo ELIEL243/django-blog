@@ -1,0 +1,118 @@
+body{
+    background-color: lightyellow;
+    font-family: "Courier 10 Pitch", sans-serif;
+    font-size: 1rem;
+    margin-left: 10rem;
+}
+
+nav{
+    margin-top: 2rem;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: steelblue;
+    font-size: 2rem;
+}
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: lightyellow;
+}
+
+#blog article{
+    width: 50%;
+    margin-top: 2rem;
+}
+
+@media(max-width: 1024px){
+    #blog article{
+        width: 85%;
+    }
+}
+
+.title-post{
+    display: flex;
+    align-items: center;
+    color: steelblue;
+    font-size: 3rem;
+}
+
+.detail-post a{
+    color: steelblue;
+    text-decoration: none;
+    align-items: center;
+}
+
+.detail-post a:last-child{
+    color: red;
+}
+
+.title-post > div{
+    margin-left: auto;
+}
+
+.author{
+    margin: .5rem 0;
+}
+
+.title-post1{
+    text-decoration: none;
+    color: steelblue;
+    font-size: 2rem;
+}
+
+.detail-post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-post > h1{
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+input, textarea{
+    display: block;
+    padding: .75rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem ;
+    min-width: 600px;
+
+
+}
+
+label{
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.btn{
+    padding: 1rem;
+    border: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+    color: white;
+    width: 100%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn-submit{
+    background-color: steelblue;
+}
+
+.btn-delete{
+    background-color: indianred;
+}
